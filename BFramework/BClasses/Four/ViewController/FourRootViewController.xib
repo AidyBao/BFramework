@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourRootViewController">
+            <connections>
+                <outlet property="tableView" destination="9bd-UB-bnq" id="7t4-UH-bQG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9bd-UB-bnq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="4dB-2f-quz"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aTA-iH-fZH"/>
+                        <outlet property="delegate" destination="-1" id="4DM-XE-7my"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrf-gb-WKo">
+                    <rect key="frame" x="16" y="258" width="84" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="轮播广告"/>
+                    <connections>
+                        <action selector="test:" destination="-1" eventType="touchUpInside" id="5yQ-I3-AdB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9bd-UB-bnq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="But-68-wf7"/>
+                <constraint firstItem="9bd-UB-bnq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YPP-eB-Iuu"/>
+                <constraint firstAttribute="trailing" secondItem="9bd-UB-bnq" secondAttribute="trailing" id="saX-1B-5qv"/>
+            </constraints>
+            <point key="canvasLocation" x="50.5" y="-134.5"/>
+        </view>
+    </objects>
+</document>

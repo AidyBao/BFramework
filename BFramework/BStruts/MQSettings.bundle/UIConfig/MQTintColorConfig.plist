@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mq_tintColor</key>
+	<string>#3b87ef</string>
+	<key>mq_assistColor</key>
+	<string>#eff7fd</string>
+	<key>mq_backgroundColor</key>
+	<string>#eff7fd</string>
+	<key>mq_separatorColor</key>
+	<string>#eaeef4</string>
+	<key>mq_borderColor</key>
+	<string>#ffffff</string>
+	<key>mq_customAColor</key>
+	<string>#f29252</string>
+	<key>mq_customBColor</key>
+	<string>#ff4221</string>
+	<key>mq_customCColor</key>
+	<string>#ff4200</string>
+</dict>
+</plist>

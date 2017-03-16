@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mq_backgroundNormalColor</key>
+	<string>#3b87ef</string>
+	<key>mq_backgroundSelectedColor</key>
+	<string>#2773da</string>
+	<key>mq_backgroundDisabledColor</key>
+	<string>#B5D5FC</string>
+	<key>mq_titleNormalColor</key>
+	<string>#ffffff</string>
+	<key>mq_titleSelectedColor</key>
+	<string>#ffffff</string>
+	<key>mq_titleDisabledColor</key>
+	<string>#ffffff</string>
+	<key>mq_titleFontSize</key>
+	<dict>
+		<key>iPhone5</key>
+		<integer>16</integer>
+		<key>iPhone6</key>
+		<integer>18</integer>
+		<key>iPhone6P</key>
+		<integer>19</integer>
+	</dict>
+</dict>
+</plist>

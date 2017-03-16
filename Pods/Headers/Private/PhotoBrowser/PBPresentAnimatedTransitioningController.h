@@ -1,0 +1,1 @@
+../../../PhotoBrowser/Sources/PBPresentAnimatedTransitioningController.h

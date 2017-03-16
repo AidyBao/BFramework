@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>mq_useSystemBackButton</key>
+	<false/>
+	<key>mq_showSeparatorLine</key>
+	<false/>
+	<key>mq_isTranslucent</key>
+	<false/>
+	<key>mq_backgroundColor</key>
+	<string>#3B87EE</string>
+	<key>mq_textColor</key>
+	<string>#ffffff</string>
+	<key>mq_buttonColor</key>
+	<string>#ffffff</string>
+	<key>mq_titleFontSize</key>
+	<dict>
+		<key>iPhone5</key>
+		<integer>18</integer>
+		<key>iPhone6</key>
+		<integer>21</integer>
+		<key>iPhone6P</key>
+		<integer>21</integer>
+	</dict>
+	<key>mq_buttonFontSize</key>
+	<dict>
+		<key>iPhone5</key>
+		<integer>16</integer>
+		<key>iPhone6</key>
+		<integer>18</integer>
+		<key>iPhone6P</key>
+		<integer>18</integer>
+	</dict>
+</dict>
+</plist>

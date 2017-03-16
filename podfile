@@ -1,0 +1,16 @@
+platform :ios, '8.0'
+
+target 'BFramework' do
+pod 'AFNetworking', '~> 3.0'
+pod 'MBProgressHUD'
+pod 'MJExtension'
+pod 'OrderedDictionary'
+pod 'MJRefresh'
+pod 'PhotoBrowser'
+pod 'FMDB'
+pod 'SVProgressHUD'
+pod 'JSONKit-NoWarning'
+pod 'Masonry'
+pod 'UMengAnalytics-NO-IDFA'
+pod 'SDWebImage'
+end
