@@ -1,10 +1,14 @@
 
 ## BFramework介绍
 BFramework项目是一个以MVVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，主要有以下特点：
-### 1.BFramework各个模块职责也比较明确；
-### 2.BFramework引入一些常用第三方插件、宏定义、工具帮助类等；
-### 3.整个项目也是在不断更新跟维护中，功能点也会不断更新；
-### 4.代码支持iOS7以后版本；
+
+ 1.BFramework各个模块职责也比较明确；
+
+ 2.BFramework引入一些常用第三方插件、宏定义、工具帮助类等；
+
+ 3.整个项目也是在不断更新跟维护中，功能点也会不断更新；
+
+ 4.代码支持iOS7以后版本；
 
 ## 基础框架篇
     
@@ -15,6 +19,7 @@ BFramework项目是一个以MVVC模式搭建的开源功能集合，基于Object
 [[MQRootViewControllers mq_tabbarController] setSelectedIndex:0];
 
     4.所有程序 主色调 用一句话调用
+
 /*!程序主色调*/
 + (UIColor *)mq_tintColor;
 
@@ -42,16 +47,20 @@ BFramework项目是一个以MVVC模式搭建的开源功能集合，基于Object
 
  5.字体
 //MARK: -- 正文
+
 /**标题1 字体大小 默认 6:17号*/
 +extern CGFloat mq_title1FontSize();
+
 /**标题2 字体大小 默认 6:15号*/
 +extern CGFloat mq_title2FontSize();
+
 /*!正文 字体大小 默认 6:14号*/
 +extern CGFloat mq_bodyFontSize();
 
 //MARK: -- 导航栏
 /**导航栏 Title文字大小 默认 6:21号*/
 +extern CGFloat mq_navBarTitleFontSize();
+
 /**导航栏 按钮文字大小 默认 6:18号*/
 +extern CGFloat mq_navBarButtonTitleFontSize();
 
@@ -70,10 +79,10 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 */
 
 + (NSURLSessionDataTask *)asyncRequestWithURL:(NSString *)url
-params:(NSDictionary *)params
-token:(NSString *)token
-method:(MQRequestMethod)method
-mqCompletion:(MQRequestCompletion)mqCompletion;
+                                       params:(NSDictionary *)params
+                                        token:(NSString *)token
+                                        method:(MQRequestMethod)method
+                                mqCompletion:(MQRequestCompletion)mqCompletion;
 
 
 /**
