@@ -40,17 +40,17 @@ UI进阶篇
 字体
 //MARK: -- 正文
 /**标题1 字体大小 默认 6:17号*/
-extern CGFloat mq_title1FontSize();
++extern CGFloat mq_title1FontSize();
 /**标题2 字体大小 默认 6:15号*/
-extern CGFloat mq_title2FontSize();
++extern CGFloat mq_title2FontSize();
 /*!正文 字体大小 默认 6:14号*/
-extern CGFloat mq_bodyFontSize();
++extern CGFloat mq_bodyFontSize();
 
 //MARK: -- 导航栏
 /**导航栏 Title文字大小 默认 6:21号*/
-extern CGFloat mq_navBarTitleFontSize();
++extern CGFloat mq_navBarTitleFontSize();
 /**导航栏 按钮文字大小 默认 6:18号*/
-extern CGFloat mq_navBarButtonTitleFontSize();
++extern CGFloat mq_navBarButtonTitleFontSize();
 
 网络/多线程篇
 iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
@@ -69,7 +69,7 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 
 
 “ ... to be continued”
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_01.png)
+![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_01.png)
 ![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_02.png)
 ![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_03.png)
 ![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_04.png)
