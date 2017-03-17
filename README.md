@@ -68,9 +68,9 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 架构篇
 
 
-“ ... to be continued3”;
+“ ... to be continued4”;
 
-![Alt text](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_01.png);
+![Alt text](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_01.png)
 
 
 注
