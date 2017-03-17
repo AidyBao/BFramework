@@ -71,7 +71,7 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 “ ... to be continued4”;
 
 
-<img src="https://github.com/AidyBao/BFramework/master/GitHubResource/BF_01.png" width=200px height=300px></img>
+<img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_01.png" width=200px height=300px></img>
 
 注
     这个Demo是为iOS入门级的同学们准备的，由于本人也是过来人，深知入门时走过的弯路，希望对大家共同学习。
