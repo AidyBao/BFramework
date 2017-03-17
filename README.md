@@ -68,12 +68,12 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 架构篇
 
 
-“ ... to be continued”
+“ ... to be continued2”
 ![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_01.png)
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_02.png)
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_03.png)
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_04.png)
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_05.png)
+![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_02.png)
+![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_03.png)
+![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_04.png)
+![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_05.png)
 
 注
     这个Demo是为iOS入门级的同学们准备的，由于本人也是过来人，深知入门时走过的弯路，希望对大家共同学习。
