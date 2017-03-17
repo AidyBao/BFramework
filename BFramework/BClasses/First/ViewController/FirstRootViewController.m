@@ -107,7 +107,7 @@
     NSMutableDictionary *paramsDict = [[NSMutableDictionary alloc]initWithCapacity:3];
    
     [MQHUD MBShowLoadingInView:self.view text:nil delay:0];
-    [ZXNetworkEngine asyncRequestWithURL:ZXAPI_Address(apiAddress) params:paramsDict token:[APPManager getToken] method:POST zxCompletion:^(id content, NSInteger status, BOOL success, NSString *errorMsg) {
+    [MQNetworkEngine asyncRequestWithURL:MQAPI_Address(apiAddress) params:paramsDict token:[APPManager getToken] method:POST mqCompletion:^(id content, NSInteger status, BOOL success, NSString *errorMsg) {
         [MQHUD MBHideForView:self.view animate:true];
         [MQEmptyView dismissInView:self.view];
         

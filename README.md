@@ -1,17 +1,20 @@
-# BFramework
-BFramework
 
-进来的朋友帮忙点个⭐️Star哈，谢谢，持续更新...
+## BFramework介绍
+BFramework项目是一个以MVVC模式搭建的开源功能集合，基于Objective-C上面进行编写，意在解决新项目对于常见功能模块的重复开发，主要有以下特点：
+    1.BFramework各个模块职责也比较明确；
+    2.BFramework引入一些常用第三方插件、宏定义、工具帮助类等；
+    3.整个项目也是在不断更新跟维护中，功能点也会不断更新；
+    4.代码支持iOS7以后版本；
 
-十分钟搭建App框架系列（OC）
+## 基础框架篇
+    
+    1.所有核心组件都放在一个文件
+    2.所有配置都以.plist载入，包括字体颜色、大小、导航栏颜色、tabbar字体颜色等
+    3.加载tabbarController只需要一句话便可以完成
+[MQRootViewControllers loadfromPlistWithControllerClassNames:@[@"FirstRootViewController",@"SecondRootViewController",@"ThreeRootViewController",@"FourRootViewController"]];
+[[MQRootViewControllers mq_tabbarController] setSelectedIndex:0];
 
-基础框架篇
-一个用Cocoapod创建的iOS框架，集成了常用工具，耦合度低，使用方便
-
-UI进阶篇
-1.所有核心组件都放在一个文件
-2.所有配置都以.plist载入，包括字体颜色、大小、导航栏颜色、tabbar字体颜色等
-//MARK: - 主色调
+    4.所有程序 主色调 用一句话调用
 /*!程序主色调*/
 + (UIColor *)mq_tintColor;
 
@@ -37,7 +40,7 @@ UI进阶篇
 + (UIColor *)mq_customCColor;
 
 
-字体
+ 5.字体
 //MARK: -- 正文
 /**标题1 字体大小 默认 6:17号*/
 +extern CGFloat mq_title1FontSize();
@@ -52,27 +55,88 @@ UI进阶篇
 /**导航栏 按钮文字大小 默认 6:18号*/
 +extern CGFloat mq_navBarButtonTitleFontSize();
 
-网络/多线程篇
+## 网络/多线程篇
 iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 
-第三方SDK接入心得
+一句话调用网络请求
+/**
+*  异步接口请求
+*
+*  @param url          接口地址
+*  @param params       接口参数
+*  @param token        有Token 才添加签名
+*  @param method       请求方式 GET POST DELETE
+*  @param mqCompletion 接口请求完成回调
+*/
+
++ (NSURLSessionDataTask *)asyncRequestWithURL:(NSString *)url
+params:(NSDictionary *)params
+token:(NSString *)token
+method:(MQRequestMethod)method
+mqCompletion:(MQRequestCompletion)mqCompletion;
+
+
+/**
+*  图片文件上传
+*
+*  @param resourceURL 资源接口地址
+*  @param images      图片数组
+*  @param token       签名用
+*  @param qulity      压缩图片质量 0~1 0 最大压缩 1 不压缩
+*  @param params      接口请求参数
+*  @param mqCompletion    请求完成回调
+*/
+
++(NSURLSessionDataTask *)uploadImageToResourceURL:(NSString *)resourceURL
+images:(NSArray *)images
+compressQulity:(float)qulity
+filePath:(MQFilePath)filePath
+token:(NSString *)token
+params:(NSDictionary *)params
+mqCompletion:(MQRequestCompletion)mqCompletion;
+
+## 第三方SDK
 1.所有更新用cocoapods自动导入，方便更新
 
-数据持久化篇
+## 数据持久化篇
 1.再次封装FMDB，所以用方便
+/** 保存或更新
+* 如果不存在主键，保存，
+* 有主键，则更新
+*/
+- (BOOL)saveOrUpdate;
+/** 保存或更新
+* 如果根据特定的列数据可以获取记录，则更新，
+* 没有记录，则保存
+*/
+- (BOOL)saveOrUpdateByColumnName:(NSString*)columnName AndColumnValue:(NSString*)columnValue;
+/** 保存单个数据 */
+- (BOOL)save;
+/** 批量保存数据 */
++ (BOOL)saveObjects:(NSArray *)array;
 
-底层原理篇
++(BOOL)saveOrUpdateObjects:(NSArray *)array;
+/** 更新单个数据 */
+- (BOOL)update;
+/** 批量更新数据*/
++ (BOOL)updateObjects:(NSArray *)array;
+/** 删除单个数据 */
+- (BOOL)deleteObject;
+/** 批量删除数据 */
++ (BOOL)deleteObjects:(NSArray *)array;
+/** 通过条件删除数据 */
++ (BOOL)deleteObjectsByCriteria:(NSString *)criteria;
+/** 通过条件删除 (多参数）--2 */
++ (BOOL)deleteObjectsWithFormat:(NSString *)format, ...;
+/** 清空表 */
++ (BOOL)clearTable;
 
-
-
-##架构篇
-
-
-“ ... to be continued4”;
-
-
+## 效果图
 <img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_01.png" width=200px height=300px></img>
+<img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_02.png" width=200px height=300px></img>
+<img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_03.png" width=200px height=300px></img>
+<img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_04.png" width=200px height=300px></img>
+<img src="https://github.com/AidyBao/BFramework/blob/master/GitHubResource/BF_05.png" width=200px height=300px></img>
 
-注
-    这个Demo是为iOS入门级的同学们准备的，由于本人也是过来人，深知入门时走过的弯路，希望对大家共同学习。
-    由于本人知识和技术水平有限，若有什么意见及建议欢迎随时向我提出，我将非常期待与你一起探讨技术问题
+## 联系方式
+如果你在使用过程中有什么不明白或者问题可以281907061@qq.com联系，当然如果你有时间也可以一起维护
