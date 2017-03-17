@@ -72,7 +72,7 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 ![image](http://github.com/AidyBao/BFramework/master/GitHubResource/BF_01.png)
 ![image](https://github.com/AidyBao/AidyBao/BFramework/raw/master/GitHubResource/BF_02.png)
 ![image](http://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_03.png)
-![image](https://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_04.jpg)
+![image](http://github.com/AidyBao/AidyBao/BFramework/master/GitHubResource/BF_04.jpg)
 ![image](https://github.com/AidyBao/BFramework/master/GitHubResource/BF_05.png)
 
 注
