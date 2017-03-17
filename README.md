@@ -49,20 +49,25 @@ BFramework项目是一个以MVVC模式搭建的开源功能集合，基于Object
 //MARK: -- 正文
 
 /**标题1 字体大小 默认 6:17号*/
-+extern CGFloat mq_title1FontSize();
+
+extern CGFloat mq_title1FontSize();
 
 /**标题2 字体大小 默认 6:15号*/
-+extern CGFloat mq_title2FontSize();
+
+extern CGFloat mq_title2FontSize();
 
 /*!正文 字体大小 默认 6:14号*/
-+extern CGFloat mq_bodyFontSize();
+
+extern CGFloat mq_bodyFontSize();
 
 //MARK: -- 导航栏
 /**导航栏 Title文字大小 默认 6:21号*/
-+extern CGFloat mq_navBarTitleFontSize();
+
+extern CGFloat mq_navBarTitleFontSize();
 
 /**导航栏 按钮文字大小 默认 6:18号*/
-+extern CGFloat mq_navBarButtonTitleFontSize();
+
+extern CGFloat mq_navBarButtonTitleFontSize();
 
 ## 网络/多线程篇
 iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
@@ -79,10 +84,14 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 */
 
 + (NSURLSessionDataTask *)asyncRequestWithURL:(NSString *)url
-                                       params:(NSDictionary *)params
-                                        token:(NSString *)token
-                                        method:(MQRequestMethod)method
-                                mqCompletion:(MQRequestCompletion)mqCompletion;
+
+params:(NSDictionary *)params
+
+token:(NSString *)token
+
+method:(MQRequestMethod)method
+
+mqCompletion:(MQRequestCompletion)mqCompletion;
 
 
 /**
@@ -97,11 +106,17 @@ iOS笔记-多线程相关(pthread 、NSThread 、GCD、NSOperation)
 */
 
 +(NSURLSessionDataTask *)uploadImageToResourceURL:(NSString *)resourceURL
+
 images:(NSArray *)images
+
 compressQulity:(float)qulity
+
 filePath:(MQFilePath)filePath
+
 token:(NSString *)token
+
 params:(NSDictionary *)params
+
 mqCompletion:(MQRequestCompletion)mqCompletion;
 
 ## 第三方SDK
@@ -109,34 +124,38 @@ mqCompletion:(MQRequestCompletion)mqCompletion;
 
 ## 数据持久化篇
 1.再次封装FMDB，所以用方便
-/** 保存或更新
-* 如果不存在主键，保存，
-* 有主键，则更新
-*/
+/** 保存或更新*/
 - (BOOL)saveOrUpdate;
-/** 保存或更新
-* 如果根据特定的列数据可以获取记录，则更新，
-* 没有记录，则保存
-*/
+
+/** 保存或更新*/
 - (BOOL)saveOrUpdateByColumnName:(NSString*)columnName AndColumnValue:(NSString*)columnValue;
+
 /** 保存单个数据 */
 - (BOOL)save;
+
 /** 批量保存数据 */
 + (BOOL)saveObjects:(NSArray *)array;
 
 +(BOOL)saveOrUpdateObjects:(NSArray *)array;
+
 /** 更新单个数据 */
 - (BOOL)update;
+
 /** 批量更新数据*/
 + (BOOL)updateObjects:(NSArray *)array;
+
 /** 删除单个数据 */
 - (BOOL)deleteObject;
+
 /** 批量删除数据 */
 + (BOOL)deleteObjects:(NSArray *)array;
+
 /** 通过条件删除数据 */
 + (BOOL)deleteObjectsByCriteria:(NSString *)criteria;
+
 /** 通过条件删除 (多参数）--2 */
 + (BOOL)deleteObjectsWithFormat:(NSString *)format, ...;
+
 /** 清空表 */
 + (BOOL)clearTable;
 
