@@ -34,7 +34,7 @@
     [MQRouter changeRootViewController:[[LaunchRootViewController alloc] init]];
     
     //MARK: UMENG
-    [self zxn_application:application didFinishLaunchingWithOptions:launchOptions];
+    [self bmn_application:application didFinishLaunchingWithOptions:launchOptions];
     
     //4.MARK:登录失败处理
     [MQNotificationCenter addObserver:self selector:@selector(loginInvalid) name:MQNOTICE_LOGIN_OFFLINE object:nil];

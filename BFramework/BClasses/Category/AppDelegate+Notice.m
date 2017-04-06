@@ -15,13 +15,13 @@
 
 @implementation AppDelegate (Notice)
 
-- (void)zxn_application:(UIApplication *)application
+- (void)bmn_application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     if (launchOptions) {
         NSDictionary*userInfo = [launchOptions objectForKey:@"UIApplicationLaunchOptionsRemoteNotificationKey"];
         if(userInfo)
         {
-            [self zxn_didReceiveRemoteNotification:userInfo];
+            [self bmn_didReceiveRemoteNotification:userInfo];
         }
     }
     NSString * UM_KEY = UM_KEY_APPSTORE;//AppStore
@@ -44,7 +44,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     [self registRemoteNotification];
 }
 
--(void)zxn_didReceiveRemoteNotification:(NSDictionary *)userInfo
+-(void)bmn_didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
     NSError *parseError = nil;
     NSData  *jsonData = [NSJSONSerialization dataWithJSONObject:userInfo
