@@ -12,6 +12,10 @@
 		7A666D341E712A09002F13D1 /* NavBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A666D321E712A09002F13D1 /* NavBar.xcassets */; };
 		7A666D361E712A2F002F13D1 /* MQRefresh.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A666D351E712A2F002F13D1 /* MQRefresh.xcassets */; };
 		7A7151FC1E792A2C001E07FC /* AdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7151FB1E792A2C001E07FC /* AdView.m */; };
+		7A7509711E9DF32900EEF55E /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7509701E9DF32900EEF55E /* Second.storyboard */; };
+		7A7509741E9DF54D00EEF55E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7509731E9DF54D00EEF55E /* MasterViewController.m */; };
+		7A7509771E9DF55D00EEF55E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7509761E9DF55D00EEF55E /* DetailViewController.m */; };
+		7A75097A1E9DF59800EEF55E /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7509791E9DF59800EEF55E /* SplitViewController.m */; };
 		7A7787C01E6CFFC50060482E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7787BF1E6CFFC50060482E /* main.m */; };
 		7A7787C31E6CFFC50060482E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7787C21E6CFFC50060482E /* AppDelegate.m */; };
 		7A7787C91E6CFFC50060482E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7787C71E6CFFC50060482E /* Main.storyboard */; };
@@ -159,6 +163,13 @@
 		7A666D351E712A2F002F13D1 /* MQRefresh.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MQRefresh.xcassets; sourceTree = "<group>"; };
 		7A7151FA1E792A2C001E07FC /* AdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdView.h; sourceTree = "<group>"; };
 		7A7151FB1E792A2C001E07FC /* AdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdView.m; sourceTree = "<group>"; };
+		7A7509701E9DF32900EEF55E /* Second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		7A7509721E9DF54D00EEF55E /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		7A7509731E9DF54D00EEF55E /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		7A7509751E9DF55D00EEF55E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		7A7509761E9DF55D00EEF55E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7A7509781E9DF59800EEF55E /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		7A7509791E9DF59800EEF55E /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		7A7787BB1E6CFFC50060482E /* BFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7787BF1E6CFFC50060482E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A7787C11E6CFFC50060482E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -431,6 +442,14 @@
 				7A7151FB1E792A2C001E07FC /* AdView.m */,
 			);
 			path = MQADView;
+			sourceTree = "<group>";
+		};
+		7A75096F1E9DF31200EEF55E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7A7509701E9DF32900EEF55E /* Second.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		7A7787B21E6CFFC50060482E = {
@@ -1024,6 +1043,7 @@
 		7AF42DDA1E6D0F65009E79E9 /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				7A75096F1E9DF31200EEF55E /* Storyboard */,
 				7AF42DDB1E6D0F65009E79E9 /* Model */,
 				7AF42DDC1E6D0F65009E79E9 /* View */,
 				7AF42DDD1E6D0F65009E79E9 /* ViewController */,
@@ -1052,6 +1072,12 @@
 				7AF42DF91E6D28E8009E79E9 /* SecondRootViewController.h */,
 				7AF42DFA1E6D28E8009E79E9 /* SecondRootViewController.m */,
 				7AF42DFB1E6D28E8009E79E9 /* SecondRootViewController.xib */,
+				7A7509781E9DF59800EEF55E /* SplitViewController.h */,
+				7A7509791E9DF59800EEF55E /* SplitViewController.m */,
+				7A7509721E9DF54D00EEF55E /* MasterViewController.h */,
+				7A7509731E9DF54D00EEF55E /* MasterViewController.m */,
+				7A7509751E9DF55D00EEF55E /* DetailViewController.h */,
+				7A7509761E9DF55D00EEF55E /* DetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1342,6 +1368,7 @@
 				7AF42E021E6D28F8009E79E9 /* ThreeRootViewController.xib in Resources */,
 				7AE6401E1E6FCE52004B599C /* MQQRScan.xcassets in Resources */,
 				7A666D361E712A2F002F13D1 /* MQRefresh.xcassets in Resources */,
+				7A7509711E9DF32900EEF55E /* Second.storyboard in Resources */,
 				7AE63FFA1E6FCE52004B599C /* ZXCheck@3x.png in Resources */,
 				7AE63FFB1E6FCE52004B599C /* ZXFailure@2x.png in Resources */,
 				7AE640011E6FCE52004B599C /* ZXNoNetwork@2x.png in Resources */,
@@ -1432,6 +1459,7 @@
 				7AE640051E6FCE52004B599C /* Base64.m in Sources */,
 				7AE640271E6FCE53004B599C /* MQTabbarItem.m in Sources */,
 				7AE6402A1E6FCE53004B599C /* MQImageView.m in Sources */,
+				7A75097A1E9DF59800EEF55E /* SplitViewController.m in Sources */,
 				7AF42DF71E6D28D7009E79E9 /* LoginRootViewController.m in Sources */,
 				7A788B3A1E77D70600EBDB7B /* User.m in Sources */,
 				7A7787C31E6CFFC50060482E /* AppDelegate.m in Sources */,
@@ -1453,6 +1481,7 @@
 				7A788AFC1E77935600EBDB7B /* NSString+ZXRemoveEmoji.m in Sources */,
 				7AE6400C1E6FCE52004B599C /* UIImage+MQCropping.m in Sources */,
 				7AE640401E6FCE53004B599C /* MQRouterEngine.m in Sources */,
+				7A7509741E9DF54D00EEF55E /* MasterViewController.m in Sources */,
 				7AE6400F1E6FCE52004B599C /* UITabBarController+MQ.m in Sources */,
 				7AE640101E6FCE52004B599C /* UIView+MQFrame.m in Sources */,
 				7A788B201E77C82D00EBDB7B /* WHC_FMDBTestViewController.m in Sources */,
@@ -1483,6 +1512,7 @@
 				7A788AF81E778C7700EBDB7B /* NoticeViewController.m in Sources */,
 				7AE640391E6FCE53004B599C /* MQNetworkEngine.m in Sources */,
 				7AE6403A1E6FCE53004B599C /* MQNotificationCenter.m in Sources */,
+				7A7509771E9DF55D00EEF55E /* DetailViewController.m in Sources */,
 				7AE640151E6FCE52004B599C /* MQEmptyView.m in Sources */,
 				7AE640261E6FCE53004B599C /* MQTabBarConfig.m in Sources */,
 				7AE640351E6FCE53004B599C /* MQStringUtils.m in Sources */,

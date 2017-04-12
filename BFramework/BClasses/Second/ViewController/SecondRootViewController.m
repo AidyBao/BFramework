@@ -7,6 +7,7 @@
 //
 
 #import "SecondRootViewController.h"
+#import "SplitViewController.h"
 
 @interface SecondRootViewController ()
 
@@ -194,6 +195,14 @@
     [vc restartScan];
     
 }
+
+- (IBAction)split:(id)sender {
+   
+    SplitViewController *splitVC = [[UIStoryboard storyboardWithName:@"Second" bundle:nil]instantiateViewControllerWithIdentifier:NSStringFromClass([SplitViewController class])];
+
+    [self.navigationController presentViewController:splitVC animated:YES completion:nil];
+}
+
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
