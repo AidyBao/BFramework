@@ -27,13 +27,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"Master";
+    
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
     
 //    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-    self.detailVC = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+//    self.detailVC = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
 
@@ -55,16 +58,16 @@
 
 
 #pragma mark - Navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//        NSDate *object = self.objects[indexPath.row];
-//        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
-////        [controller setDetailItem:object];
-////        controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-////        controller.navigationItem.leftItemsSupplementBackButton = YES;
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSDate *object = self.objects[indexPath.row];
+        self.detailVC = (DetailViewController *)[[segue destinationViewController] topViewController];
+//        [controller setDetailItem:object];
+        self.detailVC.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+        self.detailVC.navigationItem.leftItemsSupplementBackButton = NO;
+    }
+}
 
 #pragma mark - Table View
 
@@ -99,12 +102,11 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    [self.navigationController pushViewController:[[DetailViewController alloc]init] animated:YES];
-    
-    DetailViewController *controller =(DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    //        [controller setDetailItem:object];
-    controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
-    controller.navigationItem.leftItemsSupplementBackButton = YES;
+//    DetailViewController *controller =(DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+//    //        [controller setDetailItem:object];
+//    controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
+//    controller.navigationItem.leftItemsSupplementBackButton = YES;
+
 }
 
 @end

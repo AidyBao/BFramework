@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor orangeColor];
+    self.navigationItem.title = @"DetailViewController";
     
-    
-
 }
 
 - (void)didReceiveMemoryWarning {

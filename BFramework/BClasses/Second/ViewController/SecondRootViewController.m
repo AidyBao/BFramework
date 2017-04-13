@@ -200,7 +200,7 @@
    
     SplitViewController *splitVC = [[UIStoryboard storyboardWithName:@"Second" bundle:nil]instantiateViewControllerWithIdentifier:NSStringFromClass([SplitViewController class])];
 
-    [self.navigationController presentViewController:splitVC animated:YES completion:nil];
+    [self presentViewController:splitVC animated:YES completion:nil];
 }
 
 
