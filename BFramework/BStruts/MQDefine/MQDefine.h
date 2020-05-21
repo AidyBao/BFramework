@@ -12,6 +12,7 @@
 #import "MQAPIURL.h"
 #import "MQNotificationNames.h"
 #import "MJExtension.h" //三方模型转换库
-#import "APPManager.h"
+#import "BBUserModel.h"
+#import <SDWebImage/SDImageCache.h>
 
 #endif /* MQDefine_h */

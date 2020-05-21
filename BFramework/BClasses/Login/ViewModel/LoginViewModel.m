@@ -28,11 +28,10 @@
             reLogin = true;
 
             //1.
-            [[APPManager shareManager] cleanAll];
+            [BBUserModel clearLocalUserModel];
             
             //2.保存登录状态
-            [[APPManager shareManager] loginModel].isLoginSataus = NO;
-            [[APPManager shareManager] saveLoginSataus];
+            [BBUserModel share].isLoginSataus = false;
             
             //3.清空tabBar
             [MQRootViewControllers reload];

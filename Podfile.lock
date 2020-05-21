@@ -44,6 +44,21 @@ DEPENDENCIES:
   - SVProgressHUD
   - UMengAnalytics-NO-IDFA
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - JSONKit-NoWarning
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - OrderedDictionary
+    - PhotoBrowser
+    - SDWebImage
+    - SVProgressHUD
+    - UMengAnalytics-NO-IDFA
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -60,4 +75,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 1c593d2efbd44e03777639f7d553e93fb8ad0779
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.6.0.beta.2

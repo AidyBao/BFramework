@@ -45,6 +45,7 @@
 		7A788B361E77CD0C00EBDB7B /* LK_FMDBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A788B341E77CD0C00EBDB7B /* LK_FMDBTestViewController.m */; };
 		7A788B371E77CD0C00EBDB7B /* LK_FMDBTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A788B351E77CD0C00EBDB7B /* LK_FMDBTestViewController.xib */; };
 		7A788B3A1E77D70600EBDB7B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A788B391E77D70600EBDB7B /* User.m */; };
+		7ADC74CC24765518007FC1D1 /* BBUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC74CB24765518007FC1D1 /* BBUserModel.m */; };
 		7AE63F561E6FCDA7004B599C /* MQCheckUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE63F551E6FCDA7004B599C /* MQCheckUpdate.m */; };
 		7AE63FF91E6FCE52004B599C /* ZXCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE63F5C1E6FCE52004B599C /* ZXCheck@2x.png */; };
 		7AE63FFA1E6FCE52004B599C /* ZXCheck@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AE63F5D1E6FCE52004B599C /* ZXCheck@3x.png */; };
@@ -131,8 +132,6 @@
 		7AF42E011E6D28F8009E79E9 /* ThreeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF42DFF1E6D28F8009E79E9 /* ThreeRootViewController.m */; };
 		7AF42E021E6D28F8009E79E9 /* ThreeRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AF42E001E6D28F8009E79E9 /* ThreeRootViewController.xib */; };
 		7AF42EFD1E6D2CD4009E79E9 /* MQStrutsEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF42EAD1E6D2CD4009E79E9 /* MQStrutsEngine.m */; };
-		7AF42F051E6D2EE7009E79E9 /* APPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF42F041E6D2EE7009E79E9 /* APPManager.m */; };
-		7AF430081E6D45CC009E79E9 /* UserLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF430071E6D45CC009E79E9 /* UserLoginModel.m */; };
 		7AF4300B1E6D4B00009E79E9 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4300A1E6D4B00009E79E9 /* LoginViewModel.m */; };
 		7AF4300F1E6D5145009E79E9 /* AppDelegate+Notice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4300E1E6D5145009E79E9 /* AppDelegate+Notice.m */; };
 		7AF430141E6D53E5009E79E9 /* libUMessage_Sdk_1.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF430121E6D53E5009E79E9 /* libUMessage_Sdk_1.4.0.a */; };
@@ -225,6 +224,8 @@
 		7A788B391E77D70600EBDB7B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		7A8B762B1E769BB0003566F4 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		7A8B762D1E769BD2003566F4 /* BFramework.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BFramework.entitlements; sourceTree = "<group>"; };
+		7ADC74CA24765518007FC1D1 /* BBUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBUserModel.h; sourceTree = "<group>"; };
+		7ADC74CB24765518007FC1D1 /* BBUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBUserModel.m; sourceTree = "<group>"; };
 		7AE63F541E6FCDA7004B599C /* MQCheckUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQCheckUpdate.h; sourceTree = "<group>"; };
 		7AE63F551E6FCDA7004B599C /* MQCheckUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQCheckUpdate.m; sourceTree = "<group>"; };
 		7AE63F581E6FCE52004B599C /* MQAPIURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQAPIURL.h; sourceTree = "<group>"; };
@@ -383,10 +384,6 @@
 		7AF42E181E6D2CD4009E79E9 /* MQStruts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQStruts.h; sourceTree = "<group>"; };
 		7AF42EAC1E6D2CD4009E79E9 /* MQStrutsEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQStrutsEngine.h; sourceTree = "<group>"; };
 		7AF42EAD1E6D2CD4009E79E9 /* MQStrutsEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQStrutsEngine.m; sourceTree = "<group>"; };
-		7AF42F031E6D2EE7009E79E9 /* APPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPManager.h; sourceTree = "<group>"; };
-		7AF42F041E6D2EE7009E79E9 /* APPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPManager.m; sourceTree = "<group>"; };
-		7AF430061E6D45CC009E79E9 /* UserLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginModel.h; sourceTree = "<group>"; };
-		7AF430071E6D45CC009E79E9 /* UserLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginModel.m; sourceTree = "<group>"; };
 		7AF430091E6D4B00009E79E9 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		7AF4300A1E6D4B00009E79E9 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		7AF4300D1E6D5145009E79E9 /* AppDelegate+Notice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Notice.h"; sourceTree = "<group>"; };
@@ -1176,10 +1173,8 @@
 		7AF42F021E6D2ED9009E79E9 /* APPManager */ = {
 			isa = PBXGroup;
 			children = (
-				7AF42F031E6D2EE7009E79E9 /* APPManager.h */,
-				7AF42F041E6D2EE7009E79E9 /* APPManager.m */,
-				7AF430061E6D45CC009E79E9 /* UserLoginModel.h */,
-				7AF430071E6D45CC009E79E9 /* UserLoginModel.m */,
+				7ADC74CA24765518007FC1D1 /* BBUserModel.h */,
+				7ADC74CB24765518007FC1D1 /* BBUserModel.m */,
 			);
 			path = APPManager;
 			sourceTree = "<group>";
@@ -1241,7 +1236,6 @@
 				7A7787B71E6CFFC50060482E /* Sources */,
 				7A7787B81E6CFFC50060482E /* Frameworks */,
 				7A7787B91E6CFFC50060482E /* Resources */,
-				8D92538815AB545551DBE806 /* [CP] Embed Pods Frameworks */,
 				080204A6789384D078E97311 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -1327,6 +1321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1406,28 +1401,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BFramework/Pods-BFramework-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFramework/Pods-BFramework-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D92538815AB545551DBE806 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BFramework/Pods-BFramework-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BFramework/Pods-BFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DDE09A74BA7357883AA6A04E /* [CP] Check Pods Manifest.lock */ = {
@@ -1436,13 +1421,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BFramework-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1477,7 +1465,6 @@
 				7A788B0A1E779B9400EBDB7B /* LKDBSQLState.m in Sources */,
 				7AE640341E6FCE53004B599C /* MQQRCodeUtils.m in Sources */,
 				7AF42E011E6D28F8009E79E9 /* ThreeRootViewController.m in Sources */,
-				7AF42F051E6D2EE7009E79E9 /* APPManager.m in Sources */,
 				7A788AFC1E77935600EBDB7B /* NSString+ZXRemoveEmoji.m in Sources */,
 				7AE6400C1E6FCE52004B599C /* UIImage+MQCropping.m in Sources */,
 				7AE640401E6FCE53004B599C /* MQRouterEngine.m in Sources */,
@@ -1500,7 +1487,6 @@
 				7A788B151E77BEF600EBDB7B /* WHC_ModelSqlite.m in Sources */,
 				7AE640381E6FCE53004B599C /* MQAPISign.m in Sources */,
 				7AF42DF21E6D28C5009E79E9 /* LaunchRootViewController.m in Sources */,
-				7AF430081E6D45CC009E79E9 /* UserLoginModel.m in Sources */,
 				7AE6400A1E6FCE52004B599C /* UIDevice+MQ.m in Sources */,
 				7AE640131E6FCE52004B599C /* UIViewController+MQPortrait.m in Sources */,
 				7AE640141E6FCE52004B599C /* MQCommonEngine.m in Sources */,
@@ -1538,6 +1524,7 @@
 				7AE640231E6FCE53004B599C /* MQFontConfig.m in Sources */,
 				7A788B141E77BEF600EBDB7B /* README.md in Sources */,
 				7AF42DED1E6D28B2009E79E9 /* FourRootViewController.m in Sources */,
+				7ADC74CC24765518007FC1D1 /* BBUserModel.m in Sources */,
 				7AE640291E6FCE53004B599C /* MQButton.m in Sources */,
 				7AE640161E6FCE52004B599C /* DimmingPresentationController.m in Sources */,
 				7AE6403C1E6FCE53004B599C /* MQRouter+LeadPage.m in Sources */,

@@ -19,8 +19,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"First";
-    
-    NSLog(@"%@",[APPManager getNoticeDeviceToken]);
 }
 
 #pragma mark - 测试跳转
@@ -107,7 +105,7 @@
     NSMutableDictionary *paramsDict = [[NSMutableDictionary alloc]initWithCapacity:3];
    
     [MQHUD MBShowLoadingInView:self.view text:nil delay:0];
-    [MQNetworkEngine asyncRequestWithURL:MQAPI_Address(apiAddress) params:paramsDict token:[APPManager getToken] method:POST mqCompletion:^(id content, NSInteger status, BOOL success, NSString *errorMsg) {
+    [MQNetworkEngine asyncRequestWithURL:MQAPI_Address(apiAddress) params:paramsDict token:[BBUserModel share].token method:POST mqCompletion:^(id content, NSInteger status, BOOL success, NSString *errorMsg) {
         [MQHUD MBHideForView:self.view animate:true];
         [MQEmptyView dismissInView:self.view];
         

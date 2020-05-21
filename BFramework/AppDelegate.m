@@ -80,7 +80,8 @@
     strToken = [strToken stringByReplacingOccurrencesOfString:@"<" withString:@""];
     strToken = [strToken stringByReplacingOccurrencesOfString:@">" withString:@""];
     //保存deviceToken
-    [APPManager saveNoticeDeviceToken:strToken];
+    [BBUserModel share].deviceToken = strToken;
+    
 
     NSLog(@"deviceToken == %@",strToken);
 }

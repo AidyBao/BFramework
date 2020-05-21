@@ -1,14 +1,16 @@
 //
-//  UserLoginModel.h
-//  YDGJ
+//  BBUserModel.h
+//  BFramework
 //
-//  Created by 120v on 2017/2/3.
-//  Copyright © 2017年 screson. All rights reserved.
+//  Created by 120v on 2020/5/21.
+//  Copyright © 2020 120v. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface UserLoginModel : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BBUserModel : NSObject
 
 @property (nonatomic, copy) NSString *appVersion;
 @property (nonatomic, copy) NSString *deviceToken;
@@ -39,4 +41,47 @@
 /** 登录状态*/
 @property (nonatomic, assign) BOOL isLoginSataus;
 
+/**
+* 单例初始化
+*/
++(instancetype)share;
+
+/**
+ * 重置单例
+ */
++ (void)resetUserModel;
+
+/**
+ * 清除本地的所有用户数据
+ */
++ (void)clearLocalUserModel;
+
+/**
+ 更新本地的用户数据
+ @param user 传入用户模型
+ */
++ (void)updateLocalUserModel:(BBUserModel *)user;
+
+/**
+ * 加载本地的用户模型
+ */
++ (BBUserModel *)loadLocalUserModel;
+
+/**
+* 文件夹大小的计算
+*/
++(float)folderSizeAtPath:(NSString *)path;
+
+/**
+* 单个文件大小的计算
+*/
++(long long)fileSizeAtPath:(NSString *)path;
+
+/**
+* 清空缓存
+*/
++(void)clearCache:(NSString *)path;
+
 @end
+
+NS_ASSUME_NONNULL_END
